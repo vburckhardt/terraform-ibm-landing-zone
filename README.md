@@ -19,13 +19,13 @@ Each of these patterns (excluding VSI QuickStart) creates the following infrastr
 - Virtual Private Endpoint (VPE) for Cloud Object Storage in each VPC.
 - A VPN gateway in the management VPC.
 
-Each pattern creates the following infrastructure on the VPC:
+Each pattern creates the following infrastructure in the VPC:
 
-- The VPC pattern deploys a simple IBM Cloud VPC infrastructure without any compute resources like VSIs or Red Hat OpenShift clusters
-- The QuickStart VSI pattern deploys an edge VPC with one VSI and a jump server VSI in the management VPC
-- The virtual server (VSI) pattern deploys identical virtual servers across the VSI subnet tier in each VPC
-- The Red Hat OpenShift Kubernetes (ROKS) pattern deploys identical clusters across the VSI subnet tier in each VPC
-- The mixed pattern provisions both of these elements
+- The VPC pattern deploys a simple IBM Cloud VPC infrastructure without any compute resources like VSIs or Red Hat OpenShift clusters.
+- The QuickStart VSI pattern deploys an edge VPC with one VSI and a jump server VSI in the management VPC.
+- The virtual server (VSI) pattern deploys identical virtual servers across the VSI subnet tier in each VPC.
+- The Red Hat OpenShift Kubernetes (ROKS) pattern deploys identical clusters across the VSI subnet tier in each VPC.
+- The mixed pattern provisions both of these elements.
 
 For more information about the default configuration, see [Default Secure Landing Zone configuration](.docs/pattern-defaults.md).
 
@@ -65,7 +65,7 @@ Before deploying the Secure Landing Zone module, complete the following steps:
 1. Log in to [IBM Cloud](https://cloud.ibm.com) with the IBMid used to set up the account. This IBMid user is the account owner and has full IAM access.
 1. Complete the company profile and contact information for the account. This profile is required to stay in compliance with the IBM Cloud Financial Services profile.
 1. Enable the Financial Services Validated option for your account.
-1. Enable virtual routing and forwarding (VRF) and service endpoints by creating a support case. Follow the instructions in enabling VRF and service endpoints at [https://cloud.ibm.com/docs/account?topic=account-vrf-service-endpoint&interface=ui#vrf](https://cloud.ibm.com/docs/account?topic=account-vrf-service-endpoint&interface=ui#vrf).
+1. Enable virtual routing and forwarding (VRF) and service endpoints by creating a support case. Follow the instructions in enabling VRF and service endpoints at <https://cloud.ibm.com/docs/account?topic=account-vrf-service-endpoint&interface=ui#vrf>.
 
 ### Set up account access (Cloud IAM)
 
@@ -80,10 +80,10 @@ Before deploying the Secure Landing Zone module, complete the following steps:
 
 For Key Management services, utilize IBM Cloud Hyper Protect Crypto Services. Create an instance prior to creating the Secure Landing Zone.
 
-1.  Create the service instance:
+1. Create the service instance:
 
     1.  (Optional) [Create a resource group](https://cloud.ibm.com/docs/account?topic=account-rgs&interface=ui) for your instance.
-    1.  On the Hyper Protect Crypto Services (https://cloud.ibm.com/catalog/services/hyper-protect-crypto-services) details page, select a plan.
+    1.  On the Hyper Protect Crypto Services (<https://cloud.ibm.com/catalog/services/hyper-protect-crypto-services>) details page, select a plan.
     1.  Complete the required details and click **Create**.
 
 1.  Initialize Hyper Protect Crypto Services:
@@ -92,13 +92,13 @@ For Key Management services, utilize IBM Cloud Hyper Protect Crypto Services. Cr
 
 For proof-of-technology environments, use the `auto-init` flag. For more information, see [Initializing service instances using recovery crypto units](https://cloud.ibm.com/docs/hs-crypto?topic=hs-crypto-initialize-hsm-recovery-crypto-unit).
 
-## Customize your environment
+### Customize your environment
 
-You have two ways to customize your environment with Secure Landing Zone: using Terraform input variables or the `override.json` file.
+You have two ways to tailor your environment with Secure Landing Zone: utilizing Terraform input variables or the `override.json` file.
 
 ### Customizing by using Terraform input variables
 
-In the first method, you set a couple of required input variables for your respective pattern and then provision the environment.
+In the first approach, you set a few required input variables for your respective pattern and then provision the environment.
 
 The list of input variables can be found in the `variables.tf` file of the pattern directory:
 
@@ -107,7 +107,7 @@ The list of input variables can be found in the `variables.tf` file of the patte
 - [OCP pattern input variables](./patterns/roks/variables.tf)
 - [Mixed pattern input variables](./patterns/mixed/variables.tf)
 
-Terraform offers multiple methods for setting input variables. For further information, consult the [Input Variables](https://www.terraform.io/language/values/variables#assigning-values-to-root-module-variables) section in the Terraform language documentation.
+Terraform provides multiple ways to set input variables. For more information, refer to the [Input Variables](https://www.terraform.io/language/values/variables#assigning-values-to-root-module-variables) section in the Terraform language documentation.
 
 For example, you can add more VPCs by adding the name of the new VPC to the `vpcs` variable in the `variables.tf` file in your patterns directory.
 
