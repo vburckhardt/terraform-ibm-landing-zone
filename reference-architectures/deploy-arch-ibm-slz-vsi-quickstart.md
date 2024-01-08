@@ -18,15 +18,16 @@ version: 5.3.1
 # When set to false, the file is available only in staging. Default is false.
 production: true
 
-# Use if the reference architecture has deployable code.
+# Header 1 with a Mistake
+
 # Value is the URL to land the user in the IBM Cloud catalog details page
 # for the deployable architecture.
-# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
-deployment-url: https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-vsi-ef663980-4c71-4fac-af4f-4a510a9bcf68-global
+# See <https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button>
+deployment-url: <https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-vsi-ef663980-4c71-4fac-af4f-4a510a9bcf68-global>
 
-docs: https://cloud.ibm.com/docs/secure-infrastructure-vpc
+docs: <https://cloud.ibm.com/docs/secure-infrastructure-vpc>
 
-image_source: https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/reference-architectures/vsi-pattern.png
+image_source: <https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/reference-architectures/vsi-pattern.png>
 
 related_links:
   - title: "VSI on VPC landing zone - Standard variation"
@@ -34,7 +35,7 @@ related_links:
     description: "The VSI on VPC landing zone standard variation is a deployable architecture that is based on the IBM Cloud for Financial Services reference and that provides virtual servers in a secure VPC for your workloads."
 
 use-case: Cybersecurity
-industry: Banking,FinancialSector
+industry: Banking, Financial Sector
 
 content-type: reference-architecture
 
@@ -42,21 +43,21 @@ content-type: reference-architecture
 
 {{site.data.keyword.attribute-definition-list}}
 
-# VSI on VPC landing zone - QuickStart variation
+# VSI on VPC Landing Zone - QuickStart Variation
 {: #vsi-ra-qs}
 {: toc-content-type="reference-architecture"}
-{: toc-industry="Banking,FinancialSector"}
+{: toc-industry="Banking,Financial Sector"}
 {: toc-use-case="Cybersecurity"}
 {: toc-version="5.3.1"}
 
 The QuickStart variation of the VSI on VPC landing zone deployable architecture creates a fully customizable Virtual Private Cloud (VPC) environment in a single region. The solution provides virtual servers in a secure VPC for your workloads. The QuickStart variation is designed to deploy quickly for demonstration and development.
 
-## Architecture diagram
-{: #ra-vsi-qs-architecture-diagram}
+## Architecture Diagram
+{: #ra-vsi-qs-qs-architecture-diagram}
 
-![Architecture diagram for the QuickStart variation of VSI on VPC landing zone](vsi-quickstart.drawio.svg "Architecture diagram of VSI on VPC landing zone deployable architecture"){: caption="Figure 1. QuickStart variation of VSI on VPC landing zone" caption-side="bottom"}{: external download="vsi-quickstart.drawio.svg"}
+![Architecture Diagram for the QuickStart Variation of VSI on VPC Landing Zone](vsi-quickstart.drawio.svg "Architecture Diagram of VSI on VPC Landing Zone Deployable Architecture"){: Caption="Figure 1. QuickStart Variation of VSI on VPC Landing Zone" Caption-Side="bottom"}{: External Download="vsi-quickstart.drawio.svg"}
 
-## Design requirements
+## Design Requirements
 {: #ra-vsi-qs-qs-design-requirements}
 
 ![Design requirements for VSI on VPC landing zone](heat-map-deploy-arch-slz-vsi-quickstart.svg "Design requirements"){: caption="Figure 2. Scope of the design requirements" caption-side="bottom"}
