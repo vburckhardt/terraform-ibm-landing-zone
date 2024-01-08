@@ -18,15 +18,16 @@ version: 5.3.1
 # When set to false, the file is available only in staging. Default is false.
 production: true
 
-# Use if the reference architecture has deployable code.
+# Header 1 with a Mistake
+
 # Value is the URL to land the user in the IBM Cloud catalog details page
 # for the deployable architecture.
-# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
-deployment-url: https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-ocp-95fccffc-ae3b-42df-b6d9-80be5914d852-global
+# See <https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button>
+deployment-url: <https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-ocp-95fccffc-ae3b-42df-b6d9-80be5914d852-global>
 
-docs: https://cloud.ibm.com/docs/secure-infrastructure-vpc
+docs: <https://cloud.ibm.com/docs/secure-infrastructure-vpc>
 
-image_source: https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/reference-architectures/roks.drawio.svg
+image_source: <https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/reference-architectures/roks.drawio.svg>
 
 related_links:
   - title: "VSI on VPC landing zone - Standard variation"
@@ -43,22 +44,22 @@ content-type: reference-architecture
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Red Hat OpenShift Container Platform on VPC landing zone
+Red Hat OpenShift Container Platform on VPC landing zone
 {: #ocp-ra}
 {: toc-content-type="reference-architecture"}
-{: toc-industry="Banking,FinancialSector"}
+{: toc-industry="Banking,Financial Sector"}
 {: toc-use-case="Cybersecurity"}
 {: toc-compliance="FedRAMP"}
 {: toc-version="5.3.1"}
 
-Red Hat OpenShift Container Platform on VPC landing zone is a deployable architecture solution that is based on the IBM Cloud for Financial Services reference architecture. It creates secure and compliant Red Hat OpenShift Container Platform workload clusters on a Virtual Private Cloud (VPC) network.
+Red Hat OpenShift Container Platform on VPC landing zone is a deployable architecture solution based on the IBM Cloud for Financial Services reference architecture. It creates secure and compliant Red Hat OpenShift Container Platform workload clusters on a Virtual Private Cloud (VPC) network.
 
-## Architecture diagram
+## Architecture Diagram
 {: #ra-ocp-architecture-diagram}
 
 ![Architecture diagram of the OpenShift Container Platform on VPC deployable architecture](roks.drawio.svg "Architecture diagram of Red Hat OpenShift Container Platform on VPC landing zone deployable architecture"){: caption="Figure 1. Single region architecture diagram for Red Hat OpenShift Container Platform on VPC on IBM Cloud" caption-side="bottom"}{: external download="roks.drawio.svg"}
 
-## Design requirements
+## Design Requirements
 {: #ra-ocp-design-requirements}
 
 ![Design requirements for Secure infrastructure on VPC for regulated industries](heat-map-deploy-arch-slz-ocp.svg "Design requirements"){: caption="Figure 2. Scope of the design requirements" caption-side="bottom"}

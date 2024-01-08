@@ -18,15 +18,16 @@ version: 5.3.1
 # When set to false, the file is available only in staging. Default is false.
 production: true
 
-# Use if the reference architecture has deployable code.
+# Header 1 with a Mistake
+
 # Value is the URL to land the user in the IBM Cloud catalog details page
 # for the deployable architecture.
-# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
-deployment-url: https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-vsi-ef663980-4c71-4fac-af4f-4a510a9bcf68-global
+# See <https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button>
+deployment-url: <https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-vsi-ef663980-4c71-4fac-af4f-4a510a9bcf68-global>
 
-docs: https://cloud.ibm.com/docs/secure-infrastructure-vpc
+docs: <https://cloud.ibm.com/docs/secure-infrastructure-vpc>
 
-image_source: https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/reference-architectures/vsi-extension.drawio.svg
+image_source: <https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/reference-architectures/vsi-extension.drawio.svg>
 
 related_links:
   - title: "VPC landing zone - Standard variation"
@@ -37,7 +38,7 @@ related_links:
     description: "A deployable architecture that provides virtual servers in a secure VPC for your workloads."
 
 use-case: Cybersecurity
-industry: Banking,FinancialSector
+industry: Banking, Financial Sector
 compliance: FedRAMP
 
 content-type: reference-architecture
@@ -49,14 +50,14 @@ content-type: reference-architecture
 # VSI on existing VPC landing zone - Extension
 {: #vsi-ext-ra}
 {: toc-content-type="reference-architecture"}
-{: toc-industry="Banking,FinancialSector"}
+{: toc-industry="Banking, Financial Sector"}
 {: toc-use-case="Cybersecurity"}
 {: toc-compliance="FedRAMP"}
 {: toc-version="5.3.1"}
 
 This deployable architecture extends an existing VPC deployable architecture by creating virtual server instances (VSI) in some or all of the subnets of any existing landing zone VPC deployable architecture. The architecture is based on the IBM Cloud for Financial Services reference architecture.
 
-## Architecture diagram
+## Architecture Diagram
 {: #ra-vsi-ext-architecture-diagram}
 
 ![Architecture diagram for adding a VSI to a landing zone deployable architecture](vsi-extension.drawio.svg "Architecture diagram for adding a VSI to a landing zone deployable architecture"){: caption="Figure 1. VSI on existing landing zone - Extension" caption-side="bottom"}{: external download="vsi-extension.drawio.svg"}

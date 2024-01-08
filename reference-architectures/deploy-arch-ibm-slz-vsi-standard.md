@@ -18,15 +18,16 @@ version: 5.3.1
 # When set to false, the file is available only in staging. Default is false.
 production: true
 
-# Use if the reference architecture has deployable code.
+# Header 1 with a Mistake
+
 # Value is the URL to land the user in the IBM Cloud catalog details page
 # for the deployable architecture.
-# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
-deployment-url: https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-vsi-ef663980-4c71-4fac-af4f-4a510a9bcf68-global
+# See <https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button>
+deployment-url: <https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-slz-vsi-ef663980-4c71-4fac-af4f-4a510a9bcf68-global>
 
-docs: https://cloud.ibm.com/docs/secure-infrastructure-vpc
+docs: <https://cloud.ibm.com/docs/secure-infrastructure-vpc>
 
-image_source: https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/reference-architectures/vsi-vsi.drawio.svg
+image_source: <https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/reference-architectures/vsi-vsi.drawio.svg>
 
 related_links:
   - title: "VSI on VPC landing zone - QuickStart variation"
@@ -37,7 +38,7 @@ related_links:
     description: "A deployable architecture that provides virtual servers in a secure VPC for your workloads."
 
 use-case: Cybersecurity
-industry: Banking,FinancialSector
+industry: Banking, Financial Sector
 compliance: FedRAMP
 
 content-type: reference-architecture
@@ -49,14 +50,14 @@ content-type: reference-architecture
 # VSI on VPC landing zone - Standard variation
 {: #vsi-ra}
 {: toc-content-type="reference-architecture"}
-{: toc-industry="Banking,FinancialSector"}
+{: toc-industry="Banking, Financial Sector"}
 {: toc-use-case="Cybersecurity"}
 {: toc-compliance="FedRAMP"}
 {: toc-version="5.3.1"}
 
-The Standard variation of the VSI on VPC landing zone deployable architecture is based on the IBM Cloud for Financial Services reference architecture. The architecture creates a customizable and secure infrastructure, with virtual servers, to run your workloads with a Virtual Private Cloud (VPC) in multizone regions.
+The Standard variation of the VSI on VPC landing zone deployable architecture is based on the IBM Cloud for Financial Services reference architecture. The architecture creates a customizable and secure infrastructure, with virtual servers, to run your workloads within a Virtual Private Cloud (VPC) across multizone regions.
 
-## Architecture diagram
+## Architecture Diagram
 {: #ra-vsi-architecture-diagram}
 
 ![Architecture diagram for the Standard variation of VSI on VPC landing zone](vsi-vsi.drawio.svg "Architecture diagram for the Standard variation of the VPC landing zone deployable architecture"){: caption="Figure 1. Standard variation of VSI on VPC landing zone" caption-side="bottom"}{: external download="vsi-vsi.drawio.svg"}
